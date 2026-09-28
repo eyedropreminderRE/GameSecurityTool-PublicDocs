@@ -12,7 +12,32 @@ GameSecurityTool (GST) は、ゲーム環境の安全性とユーザー資産の
 
 ゲームのセーブデータや関連ファイルを守るだけでなく、**不審なファイル、リンク、MOD など、ゲームを取り巻く周辺環境まで含めて安全性を高めること**を目標としています。
 
-現在公開している Feature 系ドキュメントでは、たとえば次の領域を確認できます。
+## 🧭 GST Feature Catalog
+
+GST本体では、現在 **14の独立した製品Feature** を定義しています。公開ドキュメントの「代表例」だけを見て機能全体を判断できないよう、このREADMEでは14 Featureを一覧化しています。
+
+| Feature | 公開仕様の状態 |
+|---|---|
+| **F-01 Zero Trust Firewall** | 公開仕様未収録 |
+| **F-02 Quarantine & Safe Restore** | 公開仕様未収録 |
+| **F-03 Allow List & Trust Exceptions** | 公開仕様未収録 |
+| **F-04 Web Link Protection** | 公開仕様あり |
+| **F-05 On-Demand Clipboard URL Sanitizer** | 公開仕様あり |
+| **F-06 In-Game Overlay HUD** | 公開仕様あり |
+| **F-07 PC Migration & Recovery** | 公開仕様未収録 |
+| **F-08 Smart Game IME Lock** | 公開仕様未収録 |
+| **F-09 Anti-Wiper Defense & Auto-Circuit Breaker** | 公開仕様未収録 |
+| **F-10 Privacy-safe Crash Diagnostics / Community Report** | 公開仕様あり |
+| **F-11 BYOK Gemini AI Assistance** | 公開仕様あり |
+| **F-12 LNK Hijack Detection** | 公開仕様あり |
+| **F-13 MOD Security & Provenance** | 公開仕様あり |
+| **F-14 Game Archive Restore / External Game Backup** | 公開仕様未収録 |
+
+**「公開仕様未収録」は、機能が存在しないという意味ではありません。** GST本体側では仕様対象として管理されている一方、この公開スナップショットには独立した公開Feature Specを収録していないことを示します。
+
+逆に、**公開仕様あり**も、実装済み・Windows実機検証済み・リリース済みを意味しません。公開資料のライフサイクル情報と、実装・検証・リリースの事実は分けて扱ってください。
+
+### 現在公開している Feature 系ドキュメント
 
 - セーブデータの安全な自動バックアップ・復元
 - Web Link Protection
@@ -24,7 +49,7 @@ GameSecurityTool (GST) は、ゲーム環境の安全性とユーザー資産の
 - Trust Enhancement と Gemini AI 連携
 - Advanced User Protection に関する統合仕様
 
-これらは公開スナップショットに収録されている**設計・仕様上の対象**です。GST本体で検討されているすべての将来機能が、この公開リポジトリに常に収録されるわけではありません。
+この一覧は、**GST本体で定義されている全Featureのカタログ**と、**この公開スナップショットで実際に読めるFeature仕様**を分離するためのものです。公開範囲や公開仕様は今後の整理・レビューに応じて更新される場合があります。
 
 ## このリポジトリは何ですか？
 
@@ -48,7 +73,7 @@ GameSecurityTool (GST) は、ゲーム環境の安全性とユーザー資産の
 
 **GST は WIP (Work in Progress) です。**
 
-この公開リポジトリは、2026-09-29 時点で整理・確認された**公開対象ドキュメントのスナップショット**です。GST本体の内部リポジトリを逐次ミラーするものではなく、内部AI作業資料・Change Control・作業用Handoff・AgentContext等は公開ナビゲーションの対象外です。
+この公開リポジトリは、2026-09-29 時点で整理・確認された**公開対象ドキュメントのスナップショット**です。GST本体の内部リポジトリを逐次ミラーするものではありません。Feature CatalogはGST本体で定義されているFeature全体を可視化するための一覧であり、ここに仕様本文が収録されているかどうかとは別に管理します。内部AI作業資料・Change Control・作業用Handoff・AgentContext等は公開ナビゲーションの対象外です。
 
 この段階では、設計文書の充実度が高くても、それだけで製品全体が完成したことにはなりません。
 
